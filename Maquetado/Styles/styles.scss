@@ -1,0 +1,18 @@
+@use 'navbar';
+@use 'busqueda';
+@use 'card';
+
+body{
+    // background:linear-gradient(#e3e4e5, white);
+    background: linear-gradient(to top,#EAEEF4, 10%, white);
+    height: 100vh;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 0;
+  }

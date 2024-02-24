@@ -1,0 +1,113 @@
+.search-bar{
+		display: flex;
+		margin-left: 7%;
+		margin-right: 8%;
+		margin-top:5%;
+}
+
+.busqueda{
+	margin-right: 50%;
+
+}
+.buscar {
+ 	position: absolute;
+ 	left: 7%;
+ 	top: 47%;
+ 	//transform: translate(-50%,-50%);
+ 	//padding: 10px;
+ }
+ .text {
+  	//height: 100%vh;
+  	width: max-content;
+  	padding: 20px 30px;
+     padding-right: 150px;
+  	border-radius: 50px;
+  	font-size: 15px;
+     box-shadow: 2px 2px 5px  gray;
+  	border: 1px solid #e3e4e5;
+ 	transition: all .7s ease;
+  }
+
+  ::placeholder {
+ 	color: rgb(217, 212, 212);
+	font-size: 10pt;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .btn {
+  	position: absolute;
+	right: 10px;
+ 	top: 9px;
+  	width: 45px;
+  	height: 45px;
+  	background:linear-gradient(to bottom, #f96c00, 15%, #f7a446, #efb470);
+  	box-shadow:  1px 4px 6px #edb16c;
+	line-height: 45px;
+  	border-radius: 50%;
+  	text-align: center;
+  	cursor: pointer;
+  	transition: .5s;
+  }
+
+ .btn .fa {
+ 	font-size: 15px;
+  	color: white;
+  	transition: all .7s ease;
+  }
+
+
+  .btn:hover{
+ 	background: #f96c00;
+  }
+
+.leyenda{
+	text-align: justify;
+    line-height: 9.75pt;
+    font-family: Calibri;
+    font-size: 8pt;
+	color: gray;
+}
+
+.texto{
+	text-align: justify;
+    line-height: 27.85pt;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 19pt;
+	width: max-content;
+}
+
+// .image{
+// 	min-width: 10px;
+//     max-width: 250px;
+//     margin-left: auto;
+//     margin-right: auto;
+// }
+
+.equipo{
+		align-items: end;
+		margin-top: 10%;
+		max-width: 20vw;
+}
+
+  
+  
+  @media screen and (min-width: 768px) {
+	.busqueda {
+	  flex-direction: row; 
+	  justify-content: space-between; 
+	  text-align: left; 
+	}
+  
+	.image {
+	  margin-top: 0; 
+	  margin-left: 20px; 
+	}
+  }
+  
+  .subtitulo{
+	color: rgb(217, 212, 212);
+	font-size: 7pt;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	margin-left: 7%;
+
+  }

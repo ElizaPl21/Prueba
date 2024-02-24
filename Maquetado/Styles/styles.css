@@ -1,0 +1,366 @@
+@charset "UTF-8";
+.background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 75%;
+  height: 50%;
+}
+
+.logoPuzzle {
+  width: 10%;
+  margin-left: 30%;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  padding-left: 90px;
+  color: white;
+  border: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(60, 11, 239);
+  color: white;
+  font-size: small;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 10px 20px;
+}
+
+.navbar-logo {
+  background: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  text-decoration: none;
+  background-color: transparent !important;
+}
+
+.navbar-menu-item {
+  margin-right: 20px;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.navbar-menu-item:last-child {
+  margin-right: 0;
+}
+
+.navbar-right {
+  margin-left: auto;
+}
+
+.navbar-auth a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar-menu-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-menu-item a:hover {
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+  }
+  .navbar-auth {
+    display: none;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+}
+.search-bar {
+  display: flex;
+  margin-left: 7%;
+  margin-right: 8%;
+  margin-top: 5%;
+}
+
+.busqueda {
+  margin-right: 50%;
+}
+
+.buscar {
+  position: absolute;
+  left: 7%;
+  top: 47%;
+}
+
+.text {
+  width: max-content;
+  padding: 20px 30px;
+  padding-right: 150px;
+  border-radius: 50px;
+  font-size: 15px;
+  box-shadow: 2px 2px 5px gray;
+  border: 1px solid #e3e4e5;
+  transition: all 0.7s ease;
+}
+
+::placeholder {
+  color: rgb(217, 212, 212);
+  font-size: 10pt;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.btn {
+  position: absolute;
+  right: 10px;
+  top: 9px;
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(to bottom, #f96c00, 15%, #f7a446, #efb470);
+  box-shadow: 1px 4px 6px #edb16c;
+  line-height: 45px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn .fa {
+  font-size: 15px;
+  color: white;
+  transition: all 0.7s ease;
+}
+
+.btn:hover {
+  background: #f96c00;
+}
+
+.leyenda {
+  text-align: justify;
+  line-height: 9.75pt;
+  font-family: Calibri;
+  font-size: 8pt;
+  color: gray;
+}
+
+.texto {
+  text-align: justify;
+  line-height: 27.85pt;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 19pt;
+  width: max-content;
+}
+
+.equipo {
+  align-items: end;
+  margin-top: 10%;
+  max-width: 20vw;
+}
+
+@media screen and (min-width: 768px) {
+  .busqueda {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .image {
+    margin-top: 0;
+    margin-left: 20px;
+  }
+}
+.subtitulo {
+  color: rgb(217, 212, 212);
+  font-size: 7pt;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-left: 7%;
+}
+
+/* Estilos CSS para las tarjetas y el carrusel */
+.carousel {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 250px;
+  margin-right: 20px;
+  scroll-snap-align: start;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 100px;
+}
+
+/* Estilos CSS para el icono de ubicación y el icono de rompecabezas */
+.location-icon {
+  float: left;
+  margin-right: 5px;
+}
+
+/* Estilos para ocultar la barra de desplazamiento horizontal */
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.logosVac {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logotipos {
+  max-width: 50%;
+  height: 50%;
+  margin: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.coca {
+  padding-bottom: 5%;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+.salary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btnSal {
+  margin-left: 0px;
+  border-radius: 50%;
+  right: 1px;
+  width: 45px;
+  height: 45px;
+  background: white;
+  border: solid rgba(206, 204, 204, 0.253);
+  line-height: 45px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btnSal .fa {
+  font-size: 15px;
+  color: white;
+  transition: all 0.7s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnSal:hover {
+  background: linear-gradient(to bottom, #8148fc, 15%, #7546f7, #582cf6);
+  color: white;
+  box-shadow: 2px 4px 6px #8871f8;
+  border: none;
+}
+
+.salary-icon {
+  width: 50%;
+  height: 50%;
+  padding-top: 25%;
+  padding-left: 10%;
+  transition: filter 0.1s ease;
+}
+
+.salary-icon:hover {
+  filter: brightness(0) invert(1);
+}
+
+.location {
+  width: 5%;
+}
+
+.empresa {
+  font: size 8px;
+  color: rgba(124, 121, 121, 0.779);
+  line-height: 17.05pt;
+}
+
+.locationtext {
+  font-size: small;
+  color: rgba(124, 121, 121, 0.61);
+}
+
+.saltext {
+  background: linear-gradient(to right, #5f29ff, #4d1df9, #3f0bfc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 18pt;
+  font-weight: 800px;
+  line-height: 17.05pt;
+}
+
+.saltexts {
+  font-size: 9pt;
+  font-weight: 800px;
+  color: rgba(124, 121, 121, 0.68);
+  line-height: 17.05pt;
+}
+
+.hover-info {
+  text-align: center;
+  font-size: 8pt;
+  color: rgb(67, 66, 66);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+@media screen and (max-width: 850px) {
+  .carousel {
+    display: flex;
+  }
+}
+body {
+  background: linear-gradient(to top, #EAEEF4, 10%, white);
+  height: 100vh;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: white;
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */

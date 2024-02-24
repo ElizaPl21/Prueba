@@ -1,0 +1,155 @@
+/* Estilos CSS para las tarjetas y el carrusel */
+.carousel {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.card {
+  //flex: 0 0 auto;
+  width: 250px;
+  margin-right: 20px;
+  scroll-snap-align: start;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 100px;
+}
+
+/* Estilos CSS para el icono de ubicación y el icono de rompecabezas */
+.location-icon {
+  float: left;
+  margin-right: 5px;
+}
+
+
+/* Estilos para ocultar la barra de desplazamiento horizontal */
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+
+ .logosVac {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.logotipos {
+  max-width: 50%; 
+  height: 50%; 
+  margin: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.coca{
+  padding-bottom:5%;
+}
+.divider {
+  border: none; 
+  border-top: 1px solid #ccc; 
+  margin: 10px 0; 
+}
+
+.salary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.btnSal {
+  margin-left: 0px; 
+  border-radius: 50%;
+	 right: 1px;
+  	width: 45px;
+  	height: 45px;
+  	background:white;
+    border:solid rgba(206, 204, 204, 0.253);
+	line-height: 45px;
+  	border-radius: 50%;
+  	text-align: center;
+  	cursor: pointer;
+  	transition: .5s;
+}
+
+.btnSal .fa {
+  font-size: 15px;
+   color: white;
+   transition: all .7s ease;
+   //display: inline-block;
+   display: flex;
+   justify-content: center; 
+   align-items: center; 
+ }
+
+
+ .btnSal:hover{
+  background:linear-gradient(to bottom, #8148fc, 15%, #7546f7, #582cf6);
+  color: white;
+  box-shadow:  2px 4px 6px #8871f8;
+  border: none;
+ }
+
+ 
+.salary-icon {
+  width: 50%;
+  height: 50%;
+  padding-top: 25%;
+  padding-left: 10%;
+  transition: filter 0.1s ease;
+}
+
+.salary-icon:hover {
+  filter: brightness(0) invert(1);
+}
+
+.location{
+  width: 5%;
+}
+.empresa{
+  font: size 8px;;
+  color: rgba(124, 121, 121, 0.779);
+  line-height: 17.05pt;
+
+}
+
+.locationtext{
+  font-size: small;
+  color: rgba(124, 121, 121, 0.61);
+
+}
+.saltext {
+  background: linear-gradient(to right, #5f29ff, #4d1df9,#3f0bfc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 18pt;
+  font-weight:800px;
+  line-height: 17.05pt;
+}
+.saltexts {
+  font-size: 9pt;
+  font-weight:800px;
+  color: rgba(124, 121, 121, 0.68);
+  line-height: 17.05pt;
+}
+
+.hover-info{
+  text-align: center;
+  font-size: 8pt;
+  color: rgb(67, 66, 66);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+@media screen and (max-width: 850px) {
+  .carousel {
+    display: flex;
+  }}
